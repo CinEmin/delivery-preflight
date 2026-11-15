@@ -1,0 +1,25 @@
+name: Python compatibility
+on:
+  push:
+    paths: ['**.py', '.github/workflows/compatibility.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -v
+      - run: python demo.py demo-output
+      - run: python preflight.py demo-output/delivery-fixed.zip --require README.txt --json
