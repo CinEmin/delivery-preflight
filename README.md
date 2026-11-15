@@ -49,3 +49,7 @@ You may open an issue describing your Python version, operating system, command,
 ## Verified environments
 
 All 14 regression tests and the demo workflow passed on Ubuntu 24.04 with Python 3.10 and 3.14 ([CI run](https://github.com/CinEmin/delivery-preflight/actions/runs/43710892050)). Windows with Python 3.14 was tested locally. macOS has not been verified. These checks establish technical compatibility, not customer usefulness or archive safety.
+
+## Practical recipe
+
+[Check an HTML game ZIP before uploading to itch.io](docs/html-game-zip.md): exact required paths, wrong-folder and case mistakes, plus the runtime checks this tool cannot perform.
