@@ -1,0 +1,46 @@
+name: Delivery check experience
+description: Tell us what happened when you tried the ZIP checker (public)
+title: "Delivery check: "
+body:
+  - type: markdown
+    attributes:
+      value: "Optional feedback about actual use. This report is public. Do not attach private archives, secrets, customer details or private file paths. Synthetic examples are welcome. No payment or reward is offered."
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: What actually happened?
+      options:
+        - Outcome not reported
+        - Did not run the tool
+        - Could not run the tool
+        - Ran it on the included demo only
+        - Checked my own package and found no issue
+        - Checked my own package and corrected a real issue
+        - Checked my own package but the report was wrong or unclear
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What were you delivering? (optional)
+      description: Describe the type of files and intended delivery workflow, without identifying clients or sharing contents. Say if this was a real delivery or only a test.
+  - type: textarea
+    id: finding
+    attributes:
+      label: What helped or failed? (optional)
+      description: A finding code, Python version and operating system can help. Replace private paths with fictional names. Did you fix a package or abandon the tool? No archive upload is needed.
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often did you package files in the last month? (optional)
+      options:
+        - Not reported
+        - Never
+        - Once
+        - Two to four times
+        - Five or more times
+  - type: textarea
+    id: alternative
+    attributes:
+      label: What do you currently use instead? (optional)
+      description: Name an existing tool or manual step, and any remaining difficulty. Report what you already do, not a hypothetical purchase. Do not include account or billing details.

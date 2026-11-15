@@ -44,7 +44,7 @@ After correcting the source package, rebuild and rerun the same command. The too
 
 ## Report a problem
 
-You may open an issue describing your Python version, operating system, command, and finding code. Do not upload private archives, file contents, credentials or customer data. Use a small synthetic example where possible. No response-time promise or payment is offered.
+Use the optional [delivery check report](https://github.com/CinEmin/delivery-preflight/issues/new?template=delivery-check.yml) to describe actual use, a blocker, or a finding code. Demo-only use and real deliveries are recorded separately. Do not upload private archives, file contents, credentials or customer data. Use a small synthetic example where possible. No response-time promise or payment is offered.
 
 ## Verified environments
 
