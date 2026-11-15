@@ -1,6 +1,6 @@
 # Check an HTML game ZIP before uploading to itch.io
 
-For small HTML projects already exported from an editor or engine. This guide uses the optional, free [Delivery Preflight evaluation download](https://github.com/CinEmin/delivery-preflight/releases/tag/v0.1.1). Python 3.10+ is required for the checker; players do not need Python.
+For small HTML projects already exported from an editor or engine. This guide uses the optional, free [Delivery Preflight evaluation download](https://github.com/CinEmin/delivery-preflight/releases/tag/v0.1.2). Python 3.10+ is required for the checker; players do not need Python.
 
 ## Choose the upload format
 
