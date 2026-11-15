@@ -45,3 +45,7 @@ After correcting the source package, rebuild and rerun the same command. The too
 ## Report a problem
 
 You may open an issue describing your Python version, operating system, command, and finding code. Do not upload private archives, file contents, credentials or customer data. Use a small synthetic example where possible. No response-time promise or payment is offered.
+
+## Verified environments
+
+All 14 regression tests and the demo workflow passed on Ubuntu 24.04 with Python 3.10 and 3.14 ([CI run](https://github.com/CinEmin/delivery-preflight/actions/runs/43710892050)). Windows with Python 3.14 was tested locally. macOS has not been verified. These checks establish technical compatibility, not customer usefulness or archive safety.
